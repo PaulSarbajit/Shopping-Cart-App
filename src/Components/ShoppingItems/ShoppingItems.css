@@ -1,0 +1,11 @@
+.ShoppingItems {
+    margin: 50px;
+    margin-bottom: 100px;
+}
+
+@media (max-width: 600px) {
+    .ShoppingItems {
+        margin-bottom: 100px;
+    }
+}
+

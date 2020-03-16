@@ -1,0 +1,97 @@
+.Footer {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: darkorchid;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  border-top: 5px solid rgb(0, 0, 155);
+}
+
+.Footer .details{
+  box-sizing: border-box;
+  float: left;
+}
+
+.Footer .details p{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0 0 0 5px;
+  display: block;
+  font-size: 180%;
+  color: rgb(0, 0, 155);
+  font-weight: bolder;
+  text-align: left;
+}
+
+.Footer button {
+  background-color: rgb(62, 216, 67); /* Green */
+  border: none;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 300px;
+}
+
+.Footer .checkoutButton{
+  display: block;
+  margin: 20px;
+  margin-right: 150px;
+  float: right;
+}
+
+.Footer button:hover,
+.Footer button:active {
+    background-color: rgb(123, 212, 126);;
+    
+}
+
+.Footer button:focus{
+    outline: 0;
+}
+
+.Footer button:disabled {
+  background-color: #C7C6C6;
+  cursor: not-allowed;
+  border: 1px solid #ccc;
+  color: #888888;
+}
+
+.Footer button:not(:disabled) {
+  animation: enable 0.3s linear;
+}
+
+@keyframes enable {
+  0% {
+      transform: scale(1);
+  }
+  60% {
+      transform: scale(1.1);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+@media (max-width: 600px){
+  .Footer .checkoutButton{
+    width: 50%;
+    margin-right: 50px;
+  }
+  .Footer button {
+    padding: 10px 20px;
+    font-size: 15px;
+    width: 150px;
+  }
+
+  button:active,
+  button:hover,
+  button.active {
+    background-color: none;
+  }
+}

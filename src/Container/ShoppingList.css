@@ -1,0 +1,10 @@
+.ShoppingList{
+    text-align: center;
+    z-index: 90;
+}
+
+.ShoppingList h1{
+    color: darkblue;
+    border-bottom: 2px solid darkgray;
+    padding-bottom: 30px;
+}

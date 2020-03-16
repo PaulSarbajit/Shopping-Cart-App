@@ -1,0 +1,127 @@
+.ShoppingItem {
+    display: flex;
+    border-bottom: 1px solid #666;
+    margin-top: 10px;
+    padding: 10px 0;
+    align-items: center;
+}
+
+.ShoppingItem p{
+    display: block;
+    margin: 2px;
+    text-align: left;
+}
+
+.ShoppingItem h4 {
+    color: darkgreen;
+    display: block;
+    margin: 2px;
+    text-align: left;
+    font-size: 120%;
+}
+
+.ShoppingItem .content{
+    float: left;
+    margin-left: 20px;
+}
+
+.ShoppingItem img {
+    display: block;
+    height: 150px;
+    width: 200px;
+    float: left;
+}
+
+.ShoppingItem .buttons{
+    display: block;
+    margin-top: 10px;
+    float: left;
+}
+
+.ShoppingItem .buttons .addToCartBtn{
+    float: left;
+    margin-right: 30px;
+}
+
+.ShoppingItem .buttons .quantityButtons{
+    display: block;
+    margin: 0 10px 0 5px;
+    float: left;
+}
+
+.ShoppingItem .buttons .quantityButtons button{
+    margin: 0 5px 0 5px;
+    padding: 10px 20px;
+    border-radius: 50%;
+}
+
+.ShoppingItem button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+.ShoppingItem button:hover,
+.ShoppingItem button:active {
+    background-color: rgb(103, 235, 108);
+    
+}
+
+.ShoppingItem button:focus{
+    outline: 0;
+}
+
+.ShoppingItem .clearFloat {
+    clear: both;
+}
+
+@media (max-width: 684px) {
+
+    .ShoppingItem .buttons .quantityButtons{
+        margin: 0;
+
+    }
+
+    .ShoppingItem .buttons .quantityButtons button{
+        padding: 8px 8px;
+    }
+
+    button:active,
+    button:hover,
+    button.active {
+        background-color: none;
+    }
+
+    .ShoppingItem button{
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+
+    .ShoppingItem .buttons .addToCartBtn{
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 525px) {
+
+    .ShoppingItem .buttons .quantityButtons button{
+        padding: 4px 4px;
+        margin-bottom: 1px;
+    }
+
+    .ShoppingItem button{
+        padding: 5px 5px;
+        font-size: 8px;
+    }
+    .ShoppingItem .buttons .addToCartBtn{
+        float: left;
+        margin-right: 5px;
+    }
+}
